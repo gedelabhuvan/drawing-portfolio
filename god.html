@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>God Drawings</title>
+    <style>
+        html {
+    scroll-behavior: smooth;
+}
+        body {
+            font-family: Arial;
+            background-color: #100101fc;
+            margin: 0;
+        }
+         .neon-blue {
+            color: #53f4fa;
+            text-shadow: 0 0 5px #00f7ff,
+                         0 0 10px #00f7ff,
+                         0 0 20px #00f7ff,
+                         0 0 40px #00f7ff;
+        }
+        h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.gallery a {
+    display: block;
+    background: rgba(255,255,255,0.05);
+    padding: 12px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.gallery a:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 247, 255, 0.3);
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+.img-title {
+    text-align: center;
+    color: #00f7ff;
+    margin-top: 8px;
+    font-size: 14px;
+}
+ .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .gallery a {
+    opacity: 0;
+    animation: fadeInUp 0.8s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social Section */
+.social {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.social a {
+    margin: 0 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #00f7ff;
+    font-weight: bold;
+}
+
+.social a:hover {
+    color: white;
+}
+
+
+
+.social-icons a {
+    margin: 0 20px;
+    font-size: 32px;
+    color: #00f7ff;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: white;
+    text-shadow: 0 0 20px #00f7ff;
+    transform: scale(1.2);
+}
+        /* Top Name */
+        .top-name {
+            padding: 25px;
+            backdrop-filter: blur(8px);
+            background: rgba(255,255,255,0.05);
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .back-btn {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    background: transparent;
+    color: #00f7ff;
+    border: 2px solid #00f7ff;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #00f7ff;
+    color: black;
+    box-shadow: 0 0 20px #00f7ff;
+}
+    </style>
+</head>
+<body>
+
+    <div class="top-name">
+        <h1 class="neon-blue">BHUVAN CREATIVE</h1>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h2 class="neon-blue">GOD ARTS</h2>
+
+    <div class="gallery">
+        <a href="IMG-20260205-WA0002.jpg" target="_blank">
+    <img src="IMG-20260205-WA0002.jpg" alt="KRISHNA">
+     <p class="img-title">KRISHNA ART</p>
+</a>
+
+<a href="IMG-20260205-WA0004.jpg" target="_blank">
+    <img src="IMG-20260205-WA0004.jpg" alt="HANUMAN">
+     <p class="img-title">HANUMAN ART</p>
+</a>
+<a href="IMG-20260205-WA0008.jpg" target="_blank">
+    <img src="IMG-20260205-WA0008.jpg" alt="KRISHNA">
+     <p class="img-title">KRISHNA ART</p>
+</a>
+<a href="IMG-20260224-WA0003.jpg" target="_blank">
+    <img src="IMG-20260224-WA0003.jpg" alt="GANESH">
+     <p class="img-title">GANESHA ART</p>
+</a>
+<a href="IMG-20260224-WA0006.jpg" target="_blank">
+    <img src="IMG-20260224-WA0006.jpg" alt="GANESH">
+     <p class="img-title">GANESH ART</p>
+</a>
+<a href="IMG-20260224-WA0013.jpg" target="_blank">
+    <img src="IMG-20260224-WA0013.jpg" alt="GANESH">
+     <p class="img-title">GANESH ART</p>
+</a>
+<a href="IMG-20260224-WA0015.jpg" target="_blank">
+    <img src="IMG-20260224-WA0015.jpg" alt="KRISHNA">
+     <p class="img-title">KRISHNA ART</p>
+</a>
+    </div>
+
+    <button class="back-btn" onclick="goBack()">⬅ Back to Home</button>
+
+    <script>
+        function goBack() {
+            window.location.href = "artPage.html";
+        }
+    </script>
+
+<!-- SOCIAL SECTION STARTS HERE -->
+<div class="social">
+    <h3 class="neon-blue">Connect With Me</h3>
+
+    <div class="social-icons">
+        <!-- Instagram -->
+        <a href="https://instagram.com/bhuvans_imperfect.art" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <!-- Threads -->
+        <a href="https://threads.net/@bhuvan._.bhuvii_" target="_blank">
+            <i class="fab fa-threads"></i>
+        </a>
+    </div>
+</div>
+
+
+<footer style="margin-top:40px; padding:20px; color:#777;">© 2026 Bhuvan | Artist Portfolio | All Rights Reserved</footer>
+<!-- SOCIAL SECTION ENDS HERE -->
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
